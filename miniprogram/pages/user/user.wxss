@@ -1,0 +1,36 @@
+/* pages/user/user.wxss */
+
+.hmly-logo{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0rpx auto;
+  position: relative;
+  top: 200rpx;
+}
+
+.hmly-logo-img{
+  width: 100%;
+  height: 100%;
+}
+
+.hmly-login-button{
+  width: 80%;
+  margin: 0rpx auto;
+  position: relative;
+  top: 500rpx;
+}
+
+.hmly-login-phone{
+  margin-top: 40rpx;
+}
+
+.hmly-login-phone button{
+  border-radius: 50rpx;
+  border: 1rpx solid #70e500;
+  background-color: #fff;
+  color: #70e500;
+}
+
+.icon-message{
+
+}

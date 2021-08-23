@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "喜马拉雅",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#ff520f",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tabbar/home-icon.png",
+        "selectedIconPath": "image/tabbar/home-selectIcon.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "image/tabbar/user-icon.png",
+        "selectedIconPath": "image/tabbar/user-selectIcon.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

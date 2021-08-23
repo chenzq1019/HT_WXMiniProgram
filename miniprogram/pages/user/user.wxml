@@ -1,0 +1,16 @@
+<!--pages/user/user.wxml-->
+<block wx:if="{{!islogin}}">
+<view class="hmly-logo">
+  <image class="hmly-logo-img" src="/image/logo.png" mode="widthFix"></image>
+</view>
+<view class="hmly-login-button">
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+        <text class="icon-message">微信登录</text>
+    </button>
+
+    <view class="hmly-login-phone" bindtap="phoneLogin">
+    <button>手机登录</button>
+</view>
+</view>
+
+</block>

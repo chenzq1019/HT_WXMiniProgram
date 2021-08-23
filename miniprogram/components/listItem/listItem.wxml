@@ -1,0 +1,16 @@
+
+ <block wx:for="{{xiaoshuocontent}}" wx:key="index">
+          <view class="hmty-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+            <image class="hmly-content-img" src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
+            <view class="hmly-content-right">
+                <view class="hmly-content-title">
+                  <view class="hmly-title-text">{{item.title}}</view>
+                  <view class="hmly-introduction">{{item.trackTitle}}</view>
+                </view>
+                <view class="hmly-count">
+                  <view class="hmly-play-count">126亿</view>
+                  <view class="hmly-ji-count">{{item.tracks}}集</view>
+                </view>
+            </view>
+          </view>
+</block>

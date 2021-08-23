@@ -1,0 +1,112 @@
+<!--轮播图-->
+<view class="hmly-swiper-container">
+  <swiper class="hmly-swiper" autoplay="true" circular="true" interval="3000"
+ easing-function="easeOutCubic" current="{{swiperCurrent}}" bindchange="swiperChange">
+ <!-- 轮播图片-->
+   <swiper-item class="hmly-swiper-item" wx:for="{{imgList}}" wx:key = "index">
+      <image src="{{item}}"></image>
+   </swiper-item>
+  </swiper>
+  <!-- 指示图--> 
+  <view class="hmly-dots">
+    <block wx:for="{{imgList.length}}" wx:key="index">
+      <view class="hmly-dots-item{{index == swiperCurrent? ' hmly-dot-active':''}}"></view>
+    </block>
+  </view> 
+</view>
+
+<!--九宫格布局-->
+<view class="hmly-nav">
+  <block>
+    <view class="hmly-nav-item" bindtap="{{item.events}}" wx:for="{{navList}}" wx:key ="index">
+      <image class="hmly-nav-icon" src="{{item.icon}}" mode="widhtFix" lazy-load="false"></image>
+      <text class="hmly-nav-text">{{item.text}}</text>
+    </view>
+  </block>
+</view>
+
+<!--猜你喜欢模块-->
+<view class="hmly-like">
+  <!--模块头部-->
+  <view class="hmly-bar-title">
+    <view class="hmly-title-left">猜你喜欢</view>
+    <view class="hmly-title-right">查看全部
+      <text class="icon-right"></text>
+    </view>
+  </view>
+  <!--猜你喜欢内容模块-->
+  <view class="hmly-like-item-box">
+    <view class="hmly-like-item" bindtap="gotDetail" data-coverImg = "{{item.coverMiddle}}" data-title="{{item.intro}}"
+    wx:for="{{guess}}" wx:key="index">
+      <view class="hmly-like-img">
+          <image class="hmle-like-item-icon" src="{{item.coverMiddle}}" mode="widthFix"></image>
+          <view class="hmly-like-cover">
+            <text></text>4.6亿
+          </view>
+      </view>
+      <view class="hmly-like-text">{{item.intro}}</view>
+    </view>
+  </view>
+</view>
+
+<!--有声小说-->
+<block wx:if="{{showitem}}">
+    <view class="hmly-content-list">
+      <!--模块头部-->
+       <view class="hmly-bar-title">
+         <view class="hmly-title-left">有声小说</view>
+         <view class="hmly-title-right">查看全部</view>
+       </view> 
+       <!--列表布局-->
+       <block wx:for="{{xiaoshuocontent}}" wx:key="index">
+          <view class="hmty-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+            <image class="hmly-content-img" src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
+            <view class="hmly-content-right">
+                <view class="hmly-content-title">
+                  <view class="hmly-title-text">{{item.title}}</view>
+                  <view class="hmly-introduction">{{item.trackTitle}}</view>
+                </view>
+                <view class="hmly-count">
+                  <view class="hmly-play-count">126亿</view>
+                  <view class="hmly-ji-count">{{item.tracks}}集</view>
+                </view>
+            </view>
+          </view>
+       </block>
+    </view>
+
+    <!--相声评书-->
+    <view class="hmly-content-list">
+      <!--模块头部-->
+       <view class="hmly-bar-title">
+         <view class="hmly-title-left">相声评书</view>
+         <view class="hmly-title-right">查看全部</view>
+       </view> 
+       <!--列表布局-->
+       <block wx:for="{{xiangshengcontent}}" wx:key="index">
+          <view class="hmty-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+            <image class="hmly-content-img" src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
+            <view class="hmly-content-right">
+                <view class="hmly-content-title">
+                  <view class="hmly-title-text">{{item.title}}</view>
+                  <view class="hmly-introduction">{{item.trackTitle}}</view>
+                </view>
+                <view class="hmly-count">
+                  <view class="hmly-play-count">126亿</view>
+                  <view class="hmly-ji-count">{{item.tracks}}集</view>
+                </view>
+            </view>
+          </view>
+       </block>
+    </view>
+
+    <view class="hmly-content-list">
+      <!--模块头部-->
+      <view class="hmly-bar-title">
+         <view class="hmly-title-left">相声评书</view>
+         <view class="hmly-title-right">查看全部</view>
+       </view> 
+    <listItem xiaoshuocontent = "{{xiaoshuocontent}}"/>
+    </view>
+</block>
+

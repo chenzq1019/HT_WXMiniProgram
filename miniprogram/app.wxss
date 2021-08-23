@@ -1,0 +1,9 @@
+.hmly-swiper-container{
+   width: 90%;
+   height: 280rpx;
+   margin: 0rpx auto;
+   position: relative;
+   border-radius: 15rpx;
+   overflow: hidden;
+   background-color: red;
+}
