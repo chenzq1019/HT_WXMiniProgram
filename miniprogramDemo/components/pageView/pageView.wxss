@@ -1,0 +1,13 @@
+/* components/pageView/pageView.wxss */
+
+.pageView {
+  height: 800rpx;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper{
+  flex: 1;
+  background-color: chartreuse;
+}

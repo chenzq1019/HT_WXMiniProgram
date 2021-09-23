@@ -1,0 +1,9 @@
+<!--components/pageBar/pageBar.wxml-->
+<view class="pageBar">
+  <block wx:for="{{pageItems}}" wx:key = "index">
+    <view class="pageItem {{currentIndex == index ? 'active':''}}" bindtap="_handletap" id = "{{index}}">
+      <text class = "title">{{item.title}}</text>
+      <text class = "subtitle">{{item.subtitle}}</text>
+    </view>
+  </block>
+</view>

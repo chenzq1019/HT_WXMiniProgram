@@ -1,0 +1,12 @@
+<!--components/pageView/pageView.wxml-->
+<View class="page-class">
+  <pageBar class="pageBar" pageItems = "{{pageItems}}" bind:pageChange = "_handleTap"/>
+  <swiper class = "swiper" bindchange="_handleChange" current="{{currentIndex}}">
+    <block wx:for="{{pageItems}}" wx:key ="index">
+       <swiper-item>
+         <slot name = "{{index}}"></slot>
+         <!-- <Text>{{index}}</Text> -->
+       </swiper-item>
+    </block>
+  </swiper>
+</View>

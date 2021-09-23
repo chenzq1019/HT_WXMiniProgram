@@ -1,0 +1,8 @@
+/* component-demo/component-demo.wxss */
+
+.pageViewClass{
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+}

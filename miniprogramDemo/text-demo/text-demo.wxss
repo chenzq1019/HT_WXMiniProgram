@@ -1,0 +1,16 @@
+/* text-demo/text-demo.wxss */
+
+text{
+  display: block;
+}
+
+.name {
+  display: inline;
+  color: rebeccapurple;
+
+}
+
+.age{
+  display: inline;
+  color: red;
+}

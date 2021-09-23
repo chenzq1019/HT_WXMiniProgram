@@ -1,0 +1,12 @@
+<!--view-demo/view-demo.wxml-->
+<view class="one">1
+  <view class="two">2</view>
+</view>
+
+<view>Flex 布局</view>
+
+<view class="container">
+ <view class="left"></view>
+<view class="center"></view>
+<view class="right"></view>
+</view>

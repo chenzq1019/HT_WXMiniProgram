@@ -1,0 +1,10 @@
+<!--component-demo/component-demo.wxml-->
+<pageView page-class="pageViewClass" pageItems = "{{pageItems}}">
+<view slot ="0">
+第一个页面
+</view>
+<view slot ="1">第二个页面</view>
+<view slot ="2">第三个页面</view>
+<view slot ="3">第四个页面</view>
+</pageView>>
+

@@ -1,0 +1,41 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "text-demo/text-demo",
+          "pathName": "text-demo/text-demo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "view-demo/view-demo",
+          "pathName": "view-demo/view-demo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "form-demo/form-demo",
+          "pathName": "form-demo/form-demo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "component-demo/component-demo",
+          "pathName": "component-demo/component-demo",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

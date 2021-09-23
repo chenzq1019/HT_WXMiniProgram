@@ -1,0 +1,34 @@
+/* components/pageBar/pageBar.wxss */
+
+.pageBar {
+  height: 100rpx;
+  background-color: palegreen;
+  display: flex;
+}
+
+.pageItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+.pageItem .title{
+   
+  font-size: 30rpx;
+}
+
+.pageItem .subtitle{
+  font-size: 25rpx;
+}
+
+.active .title {
+    color: red;
+} 
+
+.active .subtitle {
+  color: red;
+}
